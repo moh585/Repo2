@@ -1,0 +1,12 @@
+---
+applications:
+- name: hackathon-poc
+  memory: 1024M
+  instances: 1
+  path: target/hackathon-poc-0.0.1-SNAPSHOT.jar
+  buildpacks:
+  - sap_java_buildpack
+  env:
+    SPRING_PROFILES_DEFAULT: cf
+
+  
